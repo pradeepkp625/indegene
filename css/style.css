@@ -4,7 +4,7 @@ body{
     box-sizing: border-box;
     font-family:sans-serif;
 }
-
+/* Navbar */
 .navbar{
      display: flex;
      flex-direction: row;
@@ -115,6 +115,8 @@ body{
 .active{
     color: grey;
 }
+
+/*Events section css*/
 .events {
    background-image: url('../images/bg.png');
    background-position: center;
@@ -130,6 +132,7 @@ body{
     justify-content: center;
     padding-left: 30px;
 }
+/*Mobile responsive for events section*/
 @media(max-width:768px){
     .events .left__section{
         width: 100%;
@@ -155,21 +158,10 @@ body{
     font-weight:bold;
     width: 150px;
 }
+
+/*Services section*/
 .services{
     padding:50px     100px ;
-}
-
-@media(max-width:768px){
-    .services{
-        padding: 0 20px;
-        margin: 0;
-    }
-    .services .layout{
-       flex-flow:column wrap; 
-    }
-    .layout__left {        
-        width: 100% !important;
-    }
 }
 .services .layout{
     display:flex;
@@ -213,11 +205,26 @@ body{
     padding: 15px;
     margin: 25px;
 }
+/*mobile responsive for services*/
+@media(max-width:768px){
+    .services{
+        padding: 0 20px;
+        margin: 0;
+    }
+    .services .layout{
+       flex-flow:column wrap; 
+    }
+    .layout__left {        
+        width: 100% !important;
+    }
+}
 @media(max-width:768px) {
     .box span{
         margin: 15px;
     }
 }
+
+/*Testimony section*/
 .testimony{
  background-image: url('../images/asphalt-1867667_1920.png');
  color:rgb(189, 187, 187);
@@ -225,15 +232,6 @@ body{
  align-items: center;
  height: 500px;
  background-position: center;
-}
-@media (max-width:768px){
-    .testimony{
-        flex-flow: column wrap;
-        height: auto;
-    }
-    .testimony .testimony__details{
-        padding: 0 20px !important;
-    }
 }
 .testimony .testimony__details{
     padding: 0 80px;
@@ -251,6 +249,17 @@ body{
     height: 105px;
     padding: 10px;
 }
+/*mobile responsive code for testimony*/
+@media (max-width:768px){
+    .testimony{
+        flex-flow: column wrap;
+        height: auto;
+    }
+    .testimony .testimony__details{
+        padding: 0 20px !important;
+    }
+}
+/*Recent blogs section*/
 .blog{
     display: flex;
     flex-direction: column;
@@ -269,27 +278,7 @@ body{
 .recent__blog >p{
     color: #e9a3a6  ;
 }
-@media(max-width:768px){
-    .recent__blog{
-        padding: 50px 20px;
-    }
-    .blog__layout{
-      flex-flow: column wrap;
-    }
-    .blog .date{
-        width: 100%;
-    }
-    .blog .date h1 p{
-        text-align: center;
-    }
-    .blog img{
-        width:100%;
-    }
-    .blog__layout span p{
-        padding: 10px;
-        text-align: left;
-    }
-}
+
 .blog__layout span p{
     padding: 10px;
     text-align: left;
@@ -312,6 +301,29 @@ body{
     margin: 0;
     padding: 0  ;
 }
+/*mobile responsive code for recent blog section*/
+@media(max-width:768px){
+    .recent__blog{
+        padding: 50px 20px;
+    }
+    .blog__layout{
+      flex-flow: column wrap;
+    }
+    .blog .date{
+        width: 100%;
+    }
+    .blog .date h1 p{
+        text-align: center;
+    }
+    .blog img{
+        width:100%;
+    }
+    .blog__layout span p{
+        padding: 10px;
+        text-align: left;
+    }
+}
+/*Newsletter section*/
 .newsletter{
     padding:80px 100px;
     background-color: #171717;
@@ -324,27 +336,6 @@ body{
 }
 .newsletter .explore_btn{
     border:none !important;   
-}
-@media (max-width:768px){
-    .newsletter{
-        padding:50px 20px;
-    }
-    form input{
-        width: 120px !important;
-    }
-    .newsletter ul{
-        flex-flow: column wrap;
-        margin: 0;
-        padding: 0;
-        border: none;
-        margin-top: 20px;
-    }
-    .newsletter ul li{
-        border-right: none !important;
-    }
-    form .global__btn{
-        padding:5px 5px 5px 5px;
-    }
 }
 .newsletter ul{
     list-style: none;
@@ -367,4 +358,26 @@ form input{
     width: 300px;
     padding:0 20px;
     color: black;
+}
+/*mobile responsive code for newsletter */
+@media (max-width:768px){
+    .newsletter{
+        padding:50px 20px;
+    }
+    form input{
+        width: 120px !important;
+    }
+    .newsletter ul{
+        flex-flow: column wrap;
+        margin: 0;
+        padding: 0;
+        border: none;
+        margin-top: 20px;
+    }
+    .newsletter ul li{
+        border-right: none !important;
+    }
+    form .global__btn{
+        padding:5px 5px 5px 5px;
+    }
 }
