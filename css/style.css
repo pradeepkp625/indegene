@@ -319,11 +319,10 @@ body{
     .blog__layout{
       flex-flow: column wrap;
     }
-    .blog .date{
-        width: 100%;
-    }
+  
     .blog .date h1 p{
         text-align: center;
+        width:auto;
     }
     .blog img{
         width:100%;
