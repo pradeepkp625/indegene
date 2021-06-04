@@ -46,22 +46,22 @@ body{
    padding: 15px 30px;
    background-color: #c7b199;
    color: white;
-   border:1px solid #c7b199;
+   border:2px solid #c7b199;
    margin-right: 10px;
    font-weight:bold;
    transition: all 0.4s ease-in-out;
 }
 .global__btn:hover{
-    background-color: #ffffff;
+    background-color: transparent;
     cursor: pointer;
-    color: black;
-    border:1px solid #ffffff;
+    color: white;
+    border:2px solid #ffffff;
 }
 .explore_btn{
     padding: 15px 30px;
     background-color: #ffffff;
     color: black;
-    border:1px solid white;
+    border:2px solid white;
     font-weight: lighter;
     font-weight:bold;
     transition: all 0.4s ease-in-out;
@@ -70,7 +70,7 @@ body{
     background-color: #c7b199;
     cursor: pointer;
     color: white;
-    border:1px solid #c7b199;
+    border:2px solid #c7b199;
 }
 .heading_one ,.heading_two{
    font-weight: lighter;
@@ -132,7 +132,13 @@ body{
     justify-content: center;
     padding-left: 30px;
 }
-/*Mobile responsive for events section*/
+.events .left__section button:hover{
+    background-color: #c7b199 !important;
+    cursor: pointer !important;
+    border: 1px solid #c7b199;
+    color: white;
+}
+/*Mobile responsive for events 2section*/
 @media(max-width:768px){
     .events .left__section{
         width: 100%;
@@ -216,6 +222,10 @@ body{
     }
     .layout__left {        
         width: 100% !important;
+    }
+    .layout__right{
+        width: 100% !important;
+        margin: 0 !important;
     }
 }
 @media(max-width:768px) {
